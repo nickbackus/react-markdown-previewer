@@ -3,47 +3,46 @@ import marked from "marked";
 import './App.css';
 
 const placeholder = 
-`# Welcome to my React Markdown Previewer!
-
-## This is a sub-heading...
-### And here's some other cool stuff:
+`
+# React Markdown Previewer
+## Cool Sub Heading Text
+### Super Sub Sub Heading:
   
-Heres some code, \`<div></div>\`, between 2 backticks.
+Here is some inline code, \`<div></div>\`, between backticks.
 
 \`\`\`
-// this is multi-line code:
+// Here is some multi-line code:
 
-function anotherExample(firstLine, lastLine) {
-  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
-    return multiLineCode;
-  }
+int foobar (foo, bar) {
+  if ( "What language is this code?")
+    return "It doesn't matter its just an example thats why the code doesn't make a lot of sense";
+  else
+    return "English?";
 }
+
 \`\`\`
   
-You can also make text **bold**... whoa!
-Or _italic_.
-Or... wait for it... **_both!_**
-And feel free to go crazy ~~crossing stuff out~~.
+**Fee Fi Fo Fum Im giant**
+ _Im ~~Italian~~ Italic!_
 
-There's also [links](http://www.nickbackus.com), and
-> Block Quotes!
+You can make [links](http://www.nickbackus.com)
 
-And if you want to get really crazy, even tables:
+> Here Is A Block Quote
 
-Wild Header | Crazy Header | Another Header?
+Whats that thing called that you put stuff on?
+
+Oh ya | Tables | This is a header
 ------------ | ------------- | ------------- 
-Your content can | be here, and it | can be here....
-And here. | Okay. | I think we get it.
+You can be here... | with me... | make your kitchen table...
+jealous  | Has this gotten weird? | If It has, please contact me with a job offer
 
-- And of course there are lists.
-  - Some are bulleted.
-     - With different indentation levels.
-        - That look like this.
+- Last but not least this is a list
+  - A bulleted list!
+     - With different types of bullets for different indentation
 
-
-1. And there are numbererd lists too.
-1. Heres another item 
-1. The list goes on...
+1. This is a numbered list
+1. I totally lied about the bulleted list being last by the way
+1. I mean, obviously because this is already below it
 
 
 ![Here is a placeholder picture](http://nickbackus.com/images/placeholder.png)
