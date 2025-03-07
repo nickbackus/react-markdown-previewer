@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import marked from "marked";
+import {marked} from "marked";
 import './App.css';
 
 const placeholder = 
 `
 # React Markdown Previewer
-## Cool Sub Heading Text
-### Super Sub Sub Heading:
+## Sub Heading Text
+### Sub Sub Heading Text:
   
 Here is some inline code, \`<div></div>\`, between backticks.
 
@@ -14,35 +14,33 @@ Here is some inline code, \`<div></div>\`, between backticks.
 // Here is some multi-line code:
 
 int foobar (foo, bar) {
-  if ( "What language is this code?")
-    return "It doesn't matter its just an example thats why the code doesn't make a lot of sense";
+  if ("What language is this code written in?")
+    return "It doesn't matter, its just an example thats why the code doesn't make a lot of sense";
   else
     return "English?";
 }
 
 \`\`\`
   
-**Fee Fi Fo Fum Im giant**
- _Im ~~Italian~~ Italic!_
+**Fee Fi Fo Fum, this text is... giant**
+ _This text is ~~Italian~~ Italic!_
 
 You can make [links](http://www.nickbackus.com)
 
 > Here Is A Block Quote
 
-Whats that thing called that you put stuff on?
-
-Oh ya | Tables | This is a header
+Column A | Column B | Column C
 ------------ | ------------- | ------------- 
-You can be here... | with me... | make your kitchen table...
-jealous  | Has this gotten weird? | If It has, please contact me with a job offer
+Why don't jokes work in octal? | Because | 7 10 11
+No talking allowed| Please _**Table**_ all discussions untill later | Because this is a table
 
-- Last but not least this is a list
+- Here is a list
   - A bulleted list!
-     - With different types of bullets for different indentation
+     - With different types of bullets for different indentations
 
 1. This is a numbered list
-1. I totally lied about the bulleted list being last by the way
-1. I mean, obviously because this is already below it
+1. List Item 2 
+1. List Item 3
 
 
 ![Here is a placeholder picture](http://nickbackus.com/images/placeholder.png)
@@ -72,7 +70,7 @@ class App extends Component {
         </div>
         <footer className="container col-12 bg-secondary text-light rounded border my-1 p-3">
           <p>Created Using React & Bootstrap</p>
-          <p>Nick Backus 2018</p>
+          <p>Nick Backus</p>
         </footer>
       </div>
      );
